@@ -9,8 +9,8 @@ import CoreHaptics
 import GameplayKit
 
 class GameOverState: GKState {
-    unowned let scene: GameScene
-    unowned let context: GameContext
+    weak var scene: GameScene?
+    weak var context: GameContext?
 
     init(scene: GameScene, context: GameContext) {
         self.scene = scene
@@ -26,7 +26,7 @@ class GameOverState: GKState {
         print("🔴 GameOverState. Did enter.")
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred(intensity: 0.85)
         Task { @MainActor in
-            scene.reset()
+            scene?.reset()
         }
     }
 }
