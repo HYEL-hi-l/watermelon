@@ -12,6 +12,7 @@ class GameScene: SKScene {
     unowned let context: GameContext
 
     private lazy var contactResovler = ContactResolver(scene: self)
+
     let backgroundNode = BackgroundNode()
     let boxNode = BoxNode()
     let nextFruitNode = NextFruitNode()
@@ -40,10 +41,12 @@ class GameScene: SKScene {
         applyGravity()
 
         backgroundNode.setup(screenSize: size)
+        backgroundNode.zPosition = 0
         addChild(backgroundNode)
 
         let ht = evolutionNode.setup(screenSize: size)
         evolutionNode.position = CGPoint(x: size.width/2.0, y: size.height / 2.0)
+        evolutionNode.zPosition = 1
         addChild(evolutionNode)
 
         nextFruitNode.setup(screenSize: size)

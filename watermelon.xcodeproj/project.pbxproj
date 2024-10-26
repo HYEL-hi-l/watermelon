@@ -69,6 +69,8 @@
 		851660CF2AEA3114006C0DC2 = {
 			isa = PBXGroup;
 			children = (
+				85219ACD2CC8110A00CEAA37 /* Assets */,
+				85219ACC2CC8110400CEAA37 /* Code */,
 				851660DA2AEA3114006C0DC2 /* watermelon */,
 				851660D92AEA3114006C0DC2 /* Products */,
 			);
@@ -85,15 +87,8 @@
 		851660DA2AEA3114006C0DC2 /* watermelon */ = {
 			isa = PBXGroup;
 			children = (
-				86E8C2BB2AEA79FD00F0E539 /* Helpers */,
-				86E8C2B52AEA75FB00F0E539 /* Models */,
-				86E8C2B02AEA722F00F0E539 /* Nodes */,
-				86E8C2B82AEA774B00F0E539 /* States */,
 				851660DB2AEA3114006C0DC2 /* watermelonApp.swift */,
 				851660DD2AEA3114006C0DC2 /* ContentView.swift */,
-				86E8C2AC2AEA6E6200F0E539 /* GameContext.swift */,
-				86E8C2AE2AEA6E7700F0E539 /* GameScene.swift */,
-				851660DF2AEA3115006C0DC2 /* Assets.xcassets */,
 				851660E12AEA3115006C0DC2 /* Preview Content */,
 			);
 			path = watermelon;
@@ -105,6 +100,27 @@
 				851660E22AEA3115006C0DC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85219ACC2CC8110400CEAA37 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				86E8C2BB2AEA79FD00F0E539 /* Helpers */,
+				86E8C2B52AEA75FB00F0E539 /* Models */,
+				86E8C2B02AEA722F00F0E539 /* Nodes */,
+				86E8C2B82AEA774B00F0E539 /* States */,
+				86E8C2AC2AEA6E6200F0E539 /* GameContext.swift */,
+				86E8C2AE2AEA6E7700F0E539 /* GameScene.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		85219ACD2CC8110A00CEAA37 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				851660DF2AEA3115006C0DC2 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		86E8C2B02AEA722F00F0E539 /* Nodes */ = {
